@@ -1,750 +1,257 @@
 <!DOCTYPE html>
-<html lang="fr" id="html-root">
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Output Infrastructure IA | Multi-Tracks WAV + MIDI | GGX Studios 12B</title>
-<meta name="description" content="GGX Studios 12B – Infrastructure de sortie audio IA pour Agences WordPress High-Ticket. Multi-tracks WAV + MIDI, funnels automatisés, clipping viral, intégration Whop Direct Checkout.">
-<link rel="canonical" href="https://test-ggx-studios-f95s.vercel.app/">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"GGX Studios Inc.","alternateName":"GGX 12B","url":"https://test-ggx-studios-f95s.vercel.app/","description":"Infrastructure Output Audio IA 12B pour Agences Marketing IA & WordPress High-Ticket.","contactPoint":{"@type":"ContactPoint","contactType":"Sales","url":"https://whop.com/ggx-studios"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"Output System™ – Pack Multi-Tracks WAV+MIDI","brand":{"@type":"Brand","name":"GGX Studios Inc."},"description":"Pack audio professionnel multi-tracks WAV + MIDI, généré par IA 12B paramètres. Livraison Build-on-Demand en moins de 24h.","offers":{"@type":"Offer","url":"https://whop.com/ggx-studios","priceCurrency":"USD","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"GGX Studios Inc."}}}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GGX SERVICES</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
-:root{--cyan:#00ffe0;--pink:#ff0077;--bg:#070709;--bg2:#0d0d12;--border:rgba(0,255,224,0.12);--text:#c8c8d8;--dim:#5a5a72}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'IBM Plex Mono',monospace;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
-body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,224,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,224,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
-.container{max-width:1280px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;background:rgba(7,7,9,0.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
-nav .inner{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 32px}
-.logo{font-family:'Orbitron',monospace;font-weight:900;font-size:1.1rem;letter-spacing:3px;background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
-.nav-tag{font-size:0.7rem;color:var(--dim);letter-spacing:2px;text-transform:uppercase}
-.nav-badge{background:rgba(0,255,224,0.08);border:1px solid rgba(0,255,224,0.2);color:var(--cyan);padding:6px 14px;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase}
-
-/* LANG SWITCH */
-.lang-switch{background:rgba(0,255,224,0.08);border:1px solid rgba(0,255,224,0.3);color:var(--cyan);padding:6px 16px;font-family:'Orbitron',monospace;font-size:.65rem;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:all .3s ease;display:flex;align-items:center;gap:8px}
-.lang-switch:hover{background:rgba(0,255,224,0.15);box-shadow:0 0 20px rgba(0,255,224,.2)}
-.nav-right{display:flex;align-items:center;gap:12px}
-
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 32px 80px;position:relative;overflow:hidden;text-align:center}
-.hero::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:800px;background:radial-gradient(ellipse,rgba(0,255,224,0.07) 0%,rgba(255,0,119,0.04) 40%,transparent 70%);pointer-events:none}
-.hero-eyebrow{font-size:0.7rem;letter-spacing:5px;color:var(--pink);text-transform:uppercase;margin-bottom:24px;animation:fadeUp 0.8s ease both}
-.hero-title{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(2.8rem,8vw,6.5rem);line-height:1.0;text-transform:uppercase;letter-spacing:-1px;margin-bottom:8px;animation:fadeUp 0.9s 0.1s ease both}
-.hero-title .line-cyan{display:block;background:linear-gradient(90deg,var(--cyan),#00d4b7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-title .line-pink{display:block;background:linear-gradient(90deg,var(--pink),#ff5577);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-title .line-white{display:block;color:rgba(255,255,255,0.92)}
-.hero-sub{font-family:'Syne',sans-serif;font-size:clamp(1rem,2.5vw,1.35rem);color:var(--text);max-width:680px;margin:28px auto 0;animation:fadeUp 1s 0.2s ease both}
-.hero-sub strong{color:var(--cyan)}
-.latency-bar{display:inline-flex;align-items:center;gap:12px;background:rgba(0,255,224,0.05);border:1px solid rgba(0,255,224,0.2);padding:10px 20px;font-size:0.72rem;letter-spacing:2px;color:var(--cyan);margin:32px 0 48px;animation:fadeUp 1s 0.25s ease both}
-.pulse-dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;animation:pulseDot 1.4s ease-in-out infinite;box-shadow:0 0 8px var(--cyan)}
-@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
-.hero-metrics{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:48px;animation:fadeUp 1s 0.3s ease both}
-.metric-val{font-family:'Orbitron',monospace;font-weight:900;font-size:2.2rem;background:linear-gradient(135deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block}
-.metric-label{font-size:.65rem;letter-spacing:3px;color:var(--dim);text-transform:uppercase}
-.hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp 1s 0.4s ease both}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;background:linear-gradient(135deg,var(--cyan),#00b8a0);color:#000;font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .3s ease;box-shadow:0 0 30px rgba(0,255,224,.3);position:relative;overflow:hidden;cursor:pointer;border:none}
-.btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,.25),transparent);transform:translateX(-100%);transition:transform .5s ease}
-.btn-primary:hover::after{transform:translateX(100%)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 50px rgba(0,255,224,.5)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;background:transparent;color:var(--pink);font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid var(--pink);transition:all .3s ease}
-.btn-secondary:hover{background:rgba(255,0,119,.1);box-shadow:0 0 30px rgba(255,0,119,.25);transform:translateY(-2px)}
-.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;background:transparent;color:var(--text);font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,.12);transition:all .3s ease}
-.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
-section{padding:100px 0;position:relative;z-index:1}
-section+section{border-top:1px solid var(--border)}
-.section-tag{font-size:.65rem;letter-spacing:5px;text-transform:uppercase;color:var(--pink);margin-bottom:16px;display:flex;align-items:center;gap:12px}
-.section-tag::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(255,0,119,.4),transparent);max-width:120px}
-.section-title{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(1.8rem,4vw,3rem);color:#fff;line-height:1.1;margin-bottom:16px}
-.section-title span{color:var(--cyan)}
-.section-desc{font-size:.95rem;color:var(--dim);max-width:560px;margin-bottom:60px}
-.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border)}
-@media(max-width:900px){.pillars-grid{grid-template-columns:1fr}}
-.pillar{background:var(--bg2);padding:48px 36px;position:relative;overflow:hidden;transition:background .4s ease}
-.pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
-.pillar.p1::before{background:linear-gradient(90deg,var(--cyan),transparent)}
-.pillar.p2::before{background:linear-gradient(90deg,var(--pink),transparent)}
-.pillar.p3::before{background:linear-gradient(90deg,#a855f7,transparent)}
-.pillar::after{content:attr(data-num);position:absolute;bottom:-20px;right:-10px;font-family:'Orbitron',monospace;font-weight:900;font-size:7rem;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
-.pillar:hover{background:rgba(15,15,25,.95)}
-.pillar-tag{font-size:.6rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:20px}
-.p1 .pillar-tag{color:var(--cyan)}.p2 .pillar-tag{color:var(--pink)}.p3 .pillar-tag{color:#a855f7}
-.pillar-icon{font-size:2.5rem;margin-bottom:20px;display:block}
-.pillar h3{font-family:'Orbitron',monospace;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:16px;letter-spacing:1px}
-.pillar p{font-size:.85rem;color:var(--dim);line-height:1.8}
-.pillar-specs{margin-top:28px;padding-top:24px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:10px}
-.spec-line{display:flex;justify-content:space-between;align-items:center;font-size:.72rem}
-.spec-key{color:var(--dim);letter-spacing:1px}.spec-val{color:#fff;font-weight:700}
-.spec-val.cyan{color:var(--cyan)}.spec-val.pink{color:var(--pink)}.spec-val.purple{color:#a855f7}
-.connection-diagram{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:0;margin:48px 0}
-@media(max-width:768px){.connection-diagram{grid-template-columns:1fr;text-align:center}}
-.conn-node{background:rgba(15,15,22,.9);border:1px solid var(--border);padding:28px 24px;text-align:center;transition:all .3s ease}
-.conn-node:hover{border-color:rgba(0,255,224,.3);box-shadow:0 0 40px rgba(0,255,224,.1)}
-.conn-node-icon{font-size:1.8rem;margin-bottom:10px;display:block}
-.conn-node-label{font-family:'Orbitron',monospace;font-weight:700;font-size:.7rem;color:#fff;letter-spacing:2px;margin-bottom:6px}
-.conn-node-sub{font-size:.65rem;color:var(--dim)}
-.conn-arrow{text-align:center;padding:0 16px;color:var(--cyan);font-size:1.4rem;font-weight:700}
-.tech-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
-.tech-tag{background:rgba(0,255,224,.06);border:1px solid rgba(0,255,224,.15);color:var(--cyan);padding:6px 14px;font-size:.68rem;letter-spacing:2px;text-transform:uppercase}
-.tech-tag.pink{background:rgba(255,0,119,.06);border-color:rgba(255,0,119,.15);color:var(--pink)}
-.tech-tag.purple{background:rgba(168,85,247,.06);border-color:rgba(168,85,247,.15);color:#a855f7}
-.retarget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);margin-top:48px}
-@media(max-width:600px){.retarget-grid{grid-template-columns:1fr}}
-.retarget-cell{background:var(--bg2);padding:24px;text-align:center}
-.retarget-label{font-family:'Orbitron',monospace;font-size:.65rem;letter-spacing:3px;color:var(--dim);margin-bottom:8px}
-.shield-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:40px 0}
-.shield-table thead tr{background:rgba(0,0,0,.6);border-bottom:2px solid var(--cyan)}
-.shield-table th{padding:18px 20px;text-align:left;font-family:'Orbitron',monospace;font-size:.68rem;letter-spacing:3px;text-transform:uppercase}
-.th-type{color:var(--dim)}.th-white{color:var(--cyan)}.th-black{color:var(--pink)}
-.shield-table td{padding:18px 20px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:top;line-height:1.9}
-.shield-table tr:hover td{background:rgba(255,255,255,.02)}
-.tag-type{font-family:'Orbitron',monospace;font-size:.7rem;letter-spacing:2px;color:#fff}
-.check{color:var(--cyan);margin-right:6px}.cross{color:var(--pink);margin-right:6px}
-.hash-banner{background:rgba(0,0,0,.5);border:1px solid rgba(0,255,224,.15);border-left:3px solid var(--cyan);padding:20px 24px;margin-top:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.hash-icon{font-size:1.5rem}
-.hash-text{font-size:.78rem;color:var(--dim);line-height:1.7;flex:1}
-.hash-text strong{color:var(--cyan)}
-.hash-code{font-family:'Orbitron',monospace;font-size:.65rem;color:var(--pink);letter-spacing:2px}
-.roi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--border);margin-bottom:48px}
-@media(max-width:600px){.roi-grid{grid-template-columns:1fr}}
-.roi-card{background:var(--bg2);padding:32px}
-.roi-label{font-size:.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
-.roi-value{font-family:'Orbitron',monospace;font-weight:900;font-size:2.4rem;line-height:1;margin-bottom:8px}
-.roi-value.c{color:var(--cyan)}.roi-value.p{color:var(--pink)}.roi-value.w{color:#fff}.roi-value.pu{color:#a855f7}
-.roi-desc{font-size:.75rem;color:var(--dim)}
-.data-bottom{background:var(--bg2);border:1px solid var(--border);padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
-@media(max-width:700px){.data-bottom{grid-template-columns:1fr}}
-.trend-row{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border)}
-.trend-row:last-child{border-bottom:none;padding-bottom:0}
-.cap-bar-wrap{margin-bottom:14px}
-.cap-bar-labels{display:flex;justify-content:space-between;margin-bottom:6px}
-.cap-bar-bg{height:4px;background:rgba(255,255,255,.06)}
-.cap-bar-fill{height:100%;box-shadow:0 0 8px}
-.cta-section{text-align:center;padding:120px 0;position:relative}
-.cta-section::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(ellipse,rgba(255,0,119,.06) 0%,rgba(0,255,224,.04) 40%,transparent 70%);pointer-events:none}
-.cta-title{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(2rem,5vw,4rem);color:#fff;line-height:1.1;margin-bottom:20px}
-.cta-title span{color:var(--cyan)}
-.cta-sub{font-size:.9rem;color:var(--dim);margin-bottom:40px}
-.cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.cta-float{position:fixed;bottom:32px;right:32px;z-index:2000;text-decoration:none;animation:floatBounce 3s ease-in-out infinite}
-.cta-float-inner{width:64px;height:64px;background:linear-gradient(135deg,var(--pink),var(--cyan));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 0 30px rgba(255,0,119,.5),0 0 60px rgba(0,255,224,.2);transition:all .3s ease;position:relative}
-.cta-float-inner::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(var(--cyan),var(--pink),var(--cyan));animation:spin 3s linear infinite;z-index:-1}
-.cta-float-inner::after{content:'';position:absolute;inset:-2px;border-radius:50%;background:var(--bg);z-index:-1}
-.cta-float:hover .cta-float-inner{transform:scale(1.12);box-shadow:0 0 50px rgba(255,0,119,.7),0 0 80px rgba(0,255,224,.4)}
-.cta-float-label{position:absolute;right:76px;top:50%;transform:translateY(-50%);background:rgba(7,7,9,.9);border:1px solid var(--border);color:var(--cyan);font-family:'Orbitron',monospace;font-size:.6rem;letter-spacing:2px;padding:6px 12px;white-space:nowrap;backdrop-filter:blur(10px);opacity:0;transition:opacity .3s ease;pointer-events:none}
-.cta-float:hover .cta-float-label{opacity:1}
-@keyframes floatBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-footer{border-top:1px solid var(--border);padding:48px 0;position:relative;z-index:1}
-.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px}
-.footer-brand{font-family:'Orbitron',monospace;font-weight:900;font-size:.8rem;letter-spacing:3px;background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.footer-copy{font-size:.7rem;color:var(--dim);margin-top:4px}
-.footer-expertise{font-size:.72rem;color:var(--cyan);margin-top:6px;letter-spacing:1px}
-.footer-sovereignty{background:rgba(0,255,224,.05);border:1px solid rgba(0,255,224,.15);border-left:3px solid var(--cyan);padding:10px 16px;margin-top:14px;font-size:.68rem;color:var(--text);line-height:1.7;max-width:480px}
-.footer-sovereignty strong{color:var(--cyan)}
-.footer-badges{display:flex;gap:8px;flex-wrap:wrap;align-self:flex-start}
-.footer-badge{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--dim);font-size:.6rem;letter-spacing:2px;padding:4px 10px;text-transform:uppercase}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
-.reveal.in{opacity:1;transform:translateY(0)}
-::-webkit-scrollbar{width:4px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:linear-gradient(var(--cyan),var(--pink));border-radius:2px}
-
-/* ===== PRICING SECTION ===== */
-.pricing-section{padding:100px 0;position:relative;z-index:1}
-.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);margin-top:60px}
-@media(max-width:1100px){.pricing-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:580px){.pricing-grid{grid-template-columns:1fr}}
-.price-card{background:var(--bg2);padding:40px 28px;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:background .3s ease}
-.price-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
-.price-card.tier-audio::before{background:linear-gradient(90deg,var(--cyan),transparent)}
-.price-card.tier-audioplus::before{background:linear-gradient(90deg,var(--pink),transparent)}
-.price-card.tier-system::before{background:linear-gradient(90deg,#a855f7,transparent)}
-.price-card.tier-enterprise::before{background:linear-gradient(90deg,#f59e0b,transparent)}
-.price-card:hover{background:rgba(15,15,25,1)}
-.price-card.featured{border:1px solid rgba(168,85,247,.4);box-shadow:0 0 40px rgba(168,85,247,.1)}
-.price-badge{font-size:.58rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;display:inline-block;padding:3px 10px;border:1px solid}
-.tier-audio .price-badge{color:var(--cyan);border-color:rgba(0,255,224,.3);background:rgba(0,255,224,.06)}
-.tier-audioplus .price-badge{color:var(--pink);border-color:rgba(255,0,119,.3);background:rgba(255,0,119,.06)}
-.tier-system .price-badge{color:#a855f7;border-color:rgba(168,85,247,.3);background:rgba(168,85,247,.06)}
-.tier-enterprise .price-badge{color:#f59e0b;border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.06)}
-.price-tier-name{font-family:'Orbitron',monospace;font-weight:900;font-size:1.1rem;color:#fff;margin-bottom:6px;letter-spacing:1px}
-.price-tagline{font-size:.72rem;color:var(--dim);margin-bottom:24px;line-height:1.6}
-.price-amount{font-family:'Orbitron',monospace;font-weight:900;margin-bottom:4px}
-.price-amount .dollar{font-size:1.4rem;vertical-align:top;margin-top:8px;display:inline-block}
-.price-amount .num{font-size:3rem;line-height:1}
-.price-amount .period{font-size:.75rem;color:var(--dim);display:block;margin-top:2px;letter-spacing:2px}
-.tier-audio .price-amount .num{color:var(--cyan)}
-.tier-audioplus .price-amount .num{color:var(--pink)}
-.tier-system .price-amount .num{color:#a855f7}
-.tier-enterprise .price-amount .num{color:#f59e0b}
-.price-divider{height:1px;background:var(--border);margin:24px 0}
-.price-features{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1}
-.price-features li{font-size:.78rem;color:var(--dim);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
-.price-features li::before{content:'✓';flex-shrink:0;font-weight:700;margin-top:1px}
-.tier-audio .price-features li::before{color:var(--cyan)}
-.tier-audioplus .price-features li::before{color:var(--pink)}
-.tier-system .price-features li::before{color:#a855f7}
-.tier-enterprise .price-features li::before{color:#f59e0b}
-.price-cta{margin-top:28px;width:100%;padding:12px 20px;font-family:'Orbitron',monospace;font-weight:700;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .3s ease}
-.tier-audio .price-cta{background:rgba(0,255,224,.1);color:var(--cyan);border:1px solid rgba(0,255,224,.3)}
-.tier-audio .price-cta:hover{background:rgba(0,255,224,.2);box-shadow:0 0 20px rgba(0,255,224,.2)}
-.tier-audioplus .price-cta{background:rgba(255,0,119,.1);color:var(--pink);border:1px solid rgba(255,0,119,.3)}
-.tier-audioplus .price-cta:hover{background:rgba(255,0,119,.2);box-shadow:0 0 20px rgba(255,0,119,.2)}
-.tier-system .price-cta{background:linear-gradient(135deg,#a855f7,#7c3aed);color:#fff;border:none}
-.tier-system .price-cta:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(168,85,247,.4)}
-.tier-enterprise .price-cta{background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;border:none;font-weight:900}
-.tier-enterprise .price-cta:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(245,158,11,.4)}
-.popular-tag{position:absolute;top:0;right:0;background:linear-gradient(135deg,#a855f7,#7c3aed);color:#fff;font-family:'Orbitron',monospace;font-size:.55rem;letter-spacing:2px;padding:6px 12px;text-transform:uppercase}
-.roi-highlight{background:rgba(0,255,224,.05);border:1px solid rgba(0,255,224,.15);padding:8px 14px;margin-top:16px;font-size:.68rem;color:var(--cyan);letter-spacing:1px;text-align:center}
-
-/* ===== CALENDLY MODAL ===== */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:5000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease;backdrop-filter:blur(8px)}
-.modal-overlay.active{opacity:1;pointer-events:all}
-.modal-box{background:var(--bg2);border:1px solid rgba(245,158,11,.3);box-shadow:0 0 60px rgba(245,158,11,.15),0 0 120px rgba(0,255,224,.05);width:min(700px,95vw);max-height:90vh;overflow-y:auto;position:relative}
-.modal-header{padding:28px 32px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start}
-.modal-title{font-family:'Orbitron',monospace;font-weight:900;font-size:1.1rem;color:#fff}
-.modal-title span{color:#f59e0b}
-.modal-close{background:none;border:1px solid var(--border);color:var(--dim);font-size:1.2rem;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;flex-shrink:0}
-.modal-close:hover{border-color:var(--pink);color:var(--pink)}
-.modal-body{padding:32px}
-.modal-sub{font-size:.82rem;color:var(--dim);margin-bottom:28px;line-height:1.8}
-.modal-sub strong{color:var(--cyan)}
-.calendly-placeholder{background:rgba(0,0,0,.4);border:2px dashed rgba(245,158,11,.3);padding:60px 32px;text-align:center}
-.calendly-placeholder p{font-family:'Orbitron',monospace;font-size:.8rem;color:#f59e0b;letter-spacing:2px;margin-bottom:12px}
-.calendly-placeholder small{font-size:.7rem;color:var(--dim)}
-.modal-benefits{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
-@media(max-width:500px){.modal-benefits{grid-template-columns:1fr}}
-.modal-benefit{background:rgba(245,158,11,.04);border:1px solid rgba(245,158,11,.15);padding:16px;font-size:.72rem;color:var(--dim);line-height:1.6}
-.modal-benefit strong{color:#f59e0b;display:block;margin-bottom:4px;font-size:.65rem;letter-spacing:2px;text-transform:uppercase}
+body{background:#060606;font-family:'Inter',sans-serif;overflow-x:hidden;min-height:100vh;color:#fff;-webkit-font-smoothing:antialiased}
+::selection{background:#fff;color:#000}
+::-webkit-scrollbar{width:1px}
+::-webkit-scrollbar-thumb{background:#1e1e1e}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-size:48px 48px;background-image:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);}
+.hero{position:relative;z-index:10;padding:80px 32px 52px;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:99px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.02);margin-bottom:24px}
+.hero-badge .dot{width:5px;height:5px;border-radius:50%;background:#00ffe0;box-shadow:0 0 8px #00ffe0;animation:blink 2s ease-in-out infinite;flex-shrink:0}
+.hero-badge span{font-size:7.5px;color:rgba(255,255,255,.3);font-weight:400;letter-spacing:.3em;text-transform:uppercase}
+.hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(2.2rem,6.5vw,5rem);font-weight:900;letter-spacing:.06em;line-height:1.0;background:linear-gradient(160deg,#fff 0%,rgba(255,255,255,.5) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+.hero-rule{width:1px;height:40px;background:linear-gradient(180deg,rgba(255,255,255,.15),transparent);margin:24px auto 0}
+.media-wrap{position:relative;z-index:10;max-width:820px;margin:0 auto;padding:0 20px 32px;display:none}
+.media-wrap.active{display:block}
+.yt-frame{position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.06);background:#000;margin-bottom:12px}
+.yt-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+.aplayer{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:14px 18px;margin-bottom:12px}
+.apbtn{width:36px;height:36px;border-radius:50%;flex-shrink:0;background:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s,background .15s}
+.apbtn:hover{transform:scale(1.08);background:#e8e8e8}
+.apbtn svg{width:12px;height:12px;fill:#000}
+.apbtn.pl svg.ipl{display:none}
+.apbtn.pl svg.ipa{display:block!important}
+svg.ipa{display:none}
+.ainfo{flex:1;min-width:0}
+.atrack{font-size:11px;font-weight:500;color:rgba(255,255,255,.65);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:9px;letter-spacing:.03em}
+.aprog{height:2px;background:rgba(255,255,255,.08);border-radius:99px;cursor:pointer;position:relative}
+.apfill{height:100%;background:#fff;border-radius:99px;width:0%;transition:width .1s linear;pointer-events:none}
+.atime{font-size:8px;color:rgba(255,255,255,.2);letter-spacing:.1em;margin-top:5px}
+.avol{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.avol svg{width:12px;height:12px;stroke:rgba(255,255,255,.2);fill:none;stroke-width:1.5;flex-shrink:0}
+input[type=range].avolin{-webkit-appearance:none;width:52px;height:2px;background:rgba(255,255,255,.1);border-radius:99px;outline:none;cursor:pointer}
+input[type=range].avolin::-webkit-slider-thumb{-webkit-appearance:none;width:10px;height:10px;border-radius:50%;background:#fff;cursor:pointer}
+.navbar{position:sticky;top:0;z-index:100;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(6,6,6,.97);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.045)}
+.pg-nav{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
+.pg-nav::-webkit-scrollbar{display:none}
+.pg-btn{font-size:8px;letter-spacing:.18em;padding:4px 11px;border-radius:99px;border:1px solid transparent;background:transparent;color:rgba(255,255,255,.22);cursor:pointer;transition:all .2s;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;white-space:nowrap;flex-shrink:0}
+.pg-btn:hover{color:rgba(255,255,255,.6)}
+.pg-btn.on{border-color:rgba(255,255,255,.16);color:#fff;background:rgba(255,255,255,.05)}
+.pages{position:relative;z-index:10}
+.pg{display:none;padding:2px 2px 80px}
+.pg.on{display:block}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:1600px;margin:0 auto}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:#0c0c0c;overflow:hidden;position:relative;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.card.show{opacity:1;transform:translateY(0)}
+.cimgw{aspect-ratio:1/1;overflow:hidden;background:#080808;position:relative}
+.cimg{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.22,1,.36,1),filter .4s}
+.card:hover .cimg{transform:scale(1.05);filter:brightness(1.06)}
+.cov{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.55) 100%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover .cov{opacity:1}
+.shopbtn{display:flex;width:100%;padding:11px 0;background:#fff;color:#000;font-size:8px;letter-spacing:.3em;font-weight:500;text-transform:uppercase;text-align:center;justify-content:center;text-decoration:none;border:none;cursor:pointer;opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s,background .15s;font-family:'Inter',sans-serif}
+.card:hover .shopbtn{opacity:1;transform:translateY(0)}
+.shopbtn:hover{background:#ebebeb}
+.eslot{aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border:1px dashed rgba(255,255,255,.04);cursor:default;transition:border-color .25s,background .25s}
+.edit-mode .eslot{cursor:pointer}
+.edit-mode .eslot:hover{border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.015)}
+.edit-mode .eslot:hover .ei{opacity:.3}
+.edit-mode .eslot:hover .el{color:rgba(255,255,255,.28)}
+.ei{opacity:.06;transition:opacity .25s}
+.el{font-size:7px;letter-spacing:.22em;color:rgba(255,255,255,.08);text-transform:uppercase;font-weight:400;transition:color .25s}
+.eslot.dov{border-color:rgba(255,255,255,.35)!important;background:rgba(255,255,255,.03)!important}
+.rm{display:none;position:absolute;top:7px;right:7px;z-index:10;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.82);border:1px solid rgba(255,255,255,.1);align-items:center;justify-content:center;cursor:pointer;transition:background .15s,border-color .15s;padding:0}
+.edit-mode .rm{display:flex}
+.rm:hover{background:rgba(200,20,40,.85);border-color:rgba(200,20,40,.5)}
+.rm svg{width:8px;height:8px;stroke:#fff;stroke-width:2.5;fill:none}
+.owner-lock{position:fixed;bottom:22px;right:22px;z-index:300}
+.lockbtn{width:36px;height:36px;border-radius:99px;background:rgba(10,10,10,.95);border:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(12px);transition:border-color .2s}
+.lockbtn:hover{border-color:rgba(255,255,255,.18)}
+.lockbtn svg{width:13px;height:13px;stroke:rgba(255,255,255,.3);fill:none;stroke-width:1.5}
+.lockbtn.on svg{stroke:#00ffe0}
+.ownerbar{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:200;display:none;align-items:center;gap:7px;background:rgba(8,8,8,.98);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.07);border-radius:99px;padding:7px 12px}
+.ownerbar.open{display:flex}
+.obbtn{font-size:7.5px;letter-spacing:.16em;padding:5px 13px;border-radius:99px;border:1px solid rgba(255,255,255,.09);background:transparent;color:rgba(255,255,255,.4);cursor:pointer;transition:all .18s;text-transform:uppercase;font-family:'Inter',sans-serif;white-space:nowrap}
+.obbtn:hover{border-color:rgba(255,255,255,.25);color:#fff}
+.obbtn.on{border-color:rgba(255,255,255,.9);background:#fff;color:#000}
+.obsep{width:1px;height:16px;background:rgba(255,255,255,.07);flex-shrink:0}
+.pwbg{display:none;position:fixed;inset:0;z-index:600;background:rgba(0,0,0,.92);backdrop-filter:blur(20px);align-items:center;justify-content:center}
+.pwbg.open{display:flex}
+.pwbox{background:#0c0c0c;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:36px;width:min(340px,88vw);text-align:center}
+.pwbox svg{width:26px;height:26px;stroke:rgba(255,255,255,.18);fill:none;stroke-width:1.2;margin-bottom:20px}
+.pwbox h3{font-family:'Orbitron',sans-serif;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.35);margin-bottom:22px;text-transform:uppercase}
+.pwin{width:100%;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:12px;color:#fff;font-size:18px;font-family:'Inter',sans-serif;outline:none;text-align:center;letter-spacing:.25em;transition:border-color .2s}
+.pwin:focus{border-color:rgba(255,255,255,.18)}
+.pwerr{font-size:7.5px;color:rgba(255,100,100,.6);letter-spacing:.15em;margin-top:9px;height:14px;text-transform:uppercase}
+.pwok{width:100%;padding:12px;border-radius:8px;margin-top:14px;background:#fff;color:#000;border:none;cursor:pointer;font-size:8px;letter-spacing:.25em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;transition:background .15s}
+.pwok:hover{background:#e8e8e8}
+.pwcancel{background:none;border:none;color:rgba(255,255,255,.15);cursor:pointer;font-size:8px;letter-spacing:.15em;text-transform:uppercase;font-family:'Inter',sans-serif;margin-top:11px;display:block;width:100%;transition:color .2s}
+.pwcancel:hover{color:rgba(255,255,255,.4)}
+.smbg{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.92);backdrop-filter:blur(20px);align-items:center;justify-content:center}
+.smbg.open{display:flex}
+.smbox{background:#0c0c0c;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;width:min(420px,88vw)}
+.smbox h3{font-family:'Orbitron',sans-serif;font-size:8px;letter-spacing:.25em;color:rgba(255,255,255,.28);margin-bottom:16px;text-transform:uppercase}
+.smin{width:100%;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:11px 13px;color:#fff;font-size:13px;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s}
+.smin:focus{border-color:rgba(255,255,255,.18)}
+.smhint{font-size:7.5px;color:rgba(255,255,255,.16);margin-top:7px;line-height:1.6;letter-spacing:.04em}
+.smacts{display:flex;gap:6px;margin-top:13px;flex-wrap:wrap}
+.smok{flex:1;min-width:100px;padding:10px;border-radius:8px;background:#fff;color:#000;border:none;cursor:pointer;font-size:8px;letter-spacing:.2em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;transition:background .15s}
+.smok:hover{background:#e0e0e0}
+.smsec{padding:10px 13px;border-radius:8px;flex-shrink:0;background:transparent;color:rgba(255,255,255,.28);border:1px solid rgba(255,255,255,.07);cursor:pointer;font-size:8px;letter-spacing:.12em;text-transform:uppercase;font-family:'Inter',sans-serif;transition:all .15s;white-space:nowrap}
+.smsec:hover{border-color:rgba(255,255,255,.22);color:rgba(255,255,255,.7)}
+.mmbg{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.92);backdrop-filter:blur(20px);align-items:center;justify-content:center}
+.mmbg.open{display:flex}
+.mmbox{background:#0c0c0c;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;width:min(460px,88vw)}
+.mmbox h3{font-family:'Orbitron',sans-serif;font-size:8px;letter-spacing:.25em;color:rgba(255,255,255,.28);margin-bottom:18px;text-transform:uppercase}
+.mrow{margin-bottom:13px}
+.mrow label{font-size:7.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.22);display:block;margin-bottom:6px;font-weight:500}
+.msave{width:100%;padding:11px;border-radius:8px;margin-top:6px;background:#fff;color:#000;border:none;cursor:pointer;font-size:8px;letter-spacing:.22em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;transition:background .15s}
+.msave:hover{background:#e0e0e0}
+.mclear{width:100%;padding:9px;border-radius:8px;margin-top:6px;background:transparent;color:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.06);cursor:pointer;font-size:8px;letter-spacing:.15em;text-transform:uppercase;font-family:'Inter',sans-serif;transition:all .15s}
+.mclear:hover{color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.15)}
+.mcancel{width:100%;padding:8px;border-radius:8px;margin-top:5px;background:transparent;border:none;color:rgba(255,255,255,.13);cursor:pointer;font-size:8px;letter-spacing:.15em;text-transform:uppercase;font-family:'Inter',sans-serif;transition:color .2s}
+.mcancel:hover{color:rgba(255,255,255,.38)}
+.dots{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:100;display:flex;gap:4px;background:rgba(6,6,6,.92);backdrop-filter:blur(12px);padding:8px 13px;border-radius:99px;border:1px solid rgba(255,255,255,.045)}
+.dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.1);border:none;cursor:pointer;transition:background .2s,transform .2s;padding:0}
+.dot.on{background:#fff;transform:scale(1.4)}
+.tip{position:fixed;top:56px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.92);color:#000;font-size:7px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;padding:5px 14px;border-radius:99px;z-index:700;opacity:0;pointer-events:none;transition:opacity .25s;white-space:nowrap}
+.tip.show{opacity:1}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <div class="inner">
-    <a href="#hero" class="logo">GGX 12B</a>
-    <span class="nav-tag" data-fr="Output Infrastructure IA™" data-en="AI Output Infrastructure™">Output Infrastructure IA™</span>
-    <div class="nav-right">
-      <span class="nav-badge" data-fr="⚡ 120 Agences" data-en="⚡ 120 Agencies">⚡ 120 Agences</span>
-      <button class="lang-switch" id="langToggle" onclick="toggleLang()">
-        🌐 <span id="langLabel">EN</span>
-      </button>
-    </div>
+<div class="hero">
+  <div class="hero-badge"><span class="dot"></span><span>Boutique en ligne</span></div>
+  <h1>GGX SERVICES</h1>
+  <div class="hero-rule"></div>
+</div>
+<div class="media-wrap" id="mwrap"><div id="ytC"></div><div id="auC"></div></div>
+<div class="navbar"><nav class="pg-nav" id="nav"></nav><div style="width:36px"></div></div>
+<div class="pages" id="pages"></div>
+<div class="dots" id="dots"></div>
+<div class="owner-lock">
+  <button class="lockbtn" id="lockbtn" onclick="clickLock()">
+    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+  </button>
+</div>
+<div class="ownerbar" id="ownerbar">
+  <button class="obbtn" id="editbtn" onclick="toggleEdit()">+ Ajouter</button>
+  <div class="obsep"></div>
+  <button class="obbtn" onclick="openMM()">Medias</button>
+  <div class="obsep"></div>
+  <button class="obbtn" onclick="lockDown()">Verrouiller</button>
+</div>
+<div class="pwbg" id="pwbg">
+  <div class="pwbox">
+    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+    <h3>Acces proprietaire</h3>
+    <input class="pwin" id="pwin" type="password" placeholder="..." maxlength="30"/>
+    <div class="pwerr" id="pwerr"></div>
+    <button class="pwok" onclick="checkPw()">Entrer</button>
+    <button class="pwcancel" onclick="closePw()">Annuler</button>
   </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="container" style="position:relative;z-index:1;">
-    <p class="hero-eyebrow" data-fr="[ GGX Services Inc. — Division Agences 2026 ]" data-en="[ GGX Services Inc. — Agency Division 2026 ]">[ GGX Services Inc. — Division Agences 2026 ]</p>
-    <h1 class="hero-title">
-      <span class="line-cyan">OUTPUT</span>
-      <span class="line-white" data-fr="INFRASTRUCTURE" data-en="INFRASTRUCTURE">INFRASTRUCTURE</span>
-      <span class="line-pink" data-fr="12B POWER" data-en="12B POWER">12B POWER</span>
-    </h1>
-    <p class="hero-sub" data-fr="Le premier système <strong>OIaaS™</strong> propulsé par 12 milliards de paramètres. Audio branding, clipping viral et tunnels Whop — <strong>livrés en &lt;24h</strong>." data-en="The first <strong>OIaaS™</strong> system powered by 12 billion parameters. Audio branding, viral clipping and Whop tunnels — <strong>delivered in &lt;24h</strong>.">Le premier système <strong>OIaaS™</strong> propulsé par 12 milliards de paramètres. Audio branding, clipping viral et tunnels Whop — <strong>livrés en &lt;24h</strong>.</p>
-    <div class="latency-bar">
-      <span class="pulse-dot"></span>
-      <span data-fr="SYSTÈME EN LIGNE — LATENCE BATCH &lt;5 SECONDES — 120 AGENCES ACTIVES" data-en="SYSTEM ONLINE — BATCH LATENCY &lt;5 SECONDS — 120 ACTIVE AGENCIES">SYSTÈME EN LIGNE — LATENCE BATCH &lt;5 SECONDES — 120 AGENCES ACTIVES</span>
-    </div>
-    <div class="hero-metrics">
-      <div class="metric"><span class="metric-val">12B</span><span class="metric-label" data-fr="Paramètres IA" data-en="AI Parameters">Paramètres IA</span></div>
-      <div class="metric"><span class="metric-val">&lt;5s</span><span class="metric-label" data-fr="Latence Batch" data-en="Batch Latency">Latence Batch</span></div>
-      <div class="metric"><span class="metric-val">320%</span><span class="metric-label" data-fr="ROI Mensuel" data-en="Monthly ROI">ROI Mensuel</span></div>
-      <div class="metric"><span class="metric-val">120</span><span class="metric-label" data-fr="Agences Max" data-en="Max Agencies">Agences Max</span></div>
-    </div>
-    <div class="hero-ctas">
-      <a href="https://whop.com/ggx-studios" target="_blank" class="btn-primary" data-fr="⚡ Checkout Whop Direct" data-en="⚡ Checkout Whop Direct">⚡ Checkout Whop Direct</a>
-      <a href="#pricing" class="btn-secondary" data-fr="Voir les Tarifs →" data-en="View Pricing →">Voir les Tarifs →</a>
-      <a href="https://distrokid.com/hyperfollow/ggxstudios/epic-stadium-shred-hard-rock-backing-track-in-e-minor-130-bpm--ggx-studios" target="_blank" class="btn-ghost">HyperFollow Gateway</a>
-    </div>
-  </div>
-</section>
-
-<!-- 3 PILIERS -->
-<section id="piliers">
-  <div class="container">
-    <div class="section-tag" data-fr="02 — Divisions" data-en="02 — Divisions">02 — Divisions</div>
-    <h2 class="section-title" data-fr="LES <span>3 PILIERS</span><br>DE L'INFRASTRUCTURE" data-en="THE <span>3 PILLARS</span><br>OF INFRASTRUCTURE">LES <span>3 PILIERS</span><br>DE L'INFRASTRUCTURE</h2>
-    <p class="section-desc" data-fr="Chaque division est un moteur autonome. Ensemble, ils forment un écosystème de sortie industrielle sans équivalent." data-en="Each division is an autonomous engine. Together, they form an unmatched industrial output ecosystem.">Chaque division est un moteur autonome. Ensemble, ils forment un écosystème de sortie industrielle sans équivalent.</p>
-    <div class="pillars-grid reveal">
-      <div class="pillar p1" data-num="01">
-        <p class="pillar-tag" data-fr="Division 01" data-en="Division 01">Division 01</p>
-        <span class="pillar-icon">🎛️</span>
-        <h3 data-fr="GGX STUDIOS<br>AUDIO OUTPUT" data-en="GGX STUDIOS<br>AUDIO OUTPUT">GGX STUDIOS<br>AUDIO OUTPUT</h3>
-        <p data-fr="Génération IA multi-tracks WAV+MIDI 12B paramètres. Sonic branding sur-mesure pour agences High-Ticket. Chaque export = actif financier valorisable." data-en="AI multi-track WAV+MIDI generation with 12B parameters. Custom sonic branding for High-Ticket agencies. Each export = a valuable financial asset.">Génération IA multi-tracks WAV+MIDI 12B paramètres. Sonic branding sur-mesure pour agences High-Ticket. Chaque export = actif financier valorisable.</p>
-        <div class="pillar-specs">
-          <div class="spec-line"><span class="spec-key">FORMAT</span><span class="spec-val cyan">WAV 24bit + MIDI</span></div>
-          <div class="spec-line"><span class="spec-key" data-fr="LATENCE" data-en="LATENCY">LATENCE</span><span class="spec-val cyan">&lt;5s / batch x10</span></div>
-          <div class="spec-line"><span class="spec-key">ISRC</span><span class="spec-val cyan" data-fr="Certifié" data-en="Certified">Certifié</span></div>
-          <div class="spec-line"><span class="spec-key">WATERMARK</span><span class="spec-val cyan" data-fr="Hash ID invisible" data-en="Invisible Hash ID">Hash ID invisible</span></div>
-        </div>
-      </div>
-      <div class="pillar p2" data-num="02">
-        <p class="pillar-tag" data-fr="Division 02" data-en="Division 02">Division 02</p>
-        <span class="pillar-icon">🎬</span>
-        <h3 data-fr="GGX MÉDIA<br>CLIPPING VIRAL" data-en="GGX MEDIA<br>VIRAL CLIPPING">GGX MÉDIA<br>CLIPPING VIRAL</h3>
-        <p data-fr="Pipeline de découpage automatisé pour Reels 9:16 haute conversion. Optimisation algorithmique pour TikTok, Instagram, YouTube Shorts et LinkedIn." data-en="Automated cutting pipeline for high-conversion 9:16 Reels. Algorithmic optimization for TikTok, Instagram, YouTube Shorts and LinkedIn.">Pipeline de découpage automatisé pour Reels 9:16 haute conversion. Optimisation algorithmique pour TikTok, Instagram, YouTube Shorts et LinkedIn.</p>
-        <div class="pillar-specs">
-          <div class="spec-line"><span class="spec-key">FORMAT</span><span class="spec-val pink">9:16 Vertical HD</span></div>
-          <div class="spec-line"><span class="spec-key" data-fr="PLATEFORMES" data-en="PLATFORMS">PLATEFORMES</span><span class="spec-val pink">TK / IG / YT / LI</span></div>
-          <div class="spec-line"><span class="spec-key" data-fr="CTR MOYEN" data-en="AVG CTR">CTR MOYEN</span><span class="spec-val pink">5.2% B2B</span></div>
-          <div class="spec-line"><span class="spec-key" data-fr="RECIBLAGE" data-en="RETARGETING">RECIBLAGE</span><span class="spec-val pink">J+3 / J+7 / J+21</span></div>
-        </div>
-      </div>
-      <div class="pillar p3" data-num="03">
-        <p class="pillar-tag" data-fr="Division 03" data-en="Division 03">Division 03</p>
-        <span class="pillar-icon">⚙️</span>
-        <h3 data-fr="GGX COMMERCIAL<br>WEB & WORDPRESS" data-en="GGX COMMERCIAL<br>WEB & WORDPRESS">GGX COMMERCIAL<br>WEB & WORDPRESS</h3>
-        <p data-fr="Showroom Vercel + tunnels WordPress automatisés. Intégration Whop Checkout direct pour conversion maximale. Marque blanche complète." data-en="Vercel Showroom + automated WordPress tunnels. Direct Whop Checkout integration for maximum conversion. Full white label.">Showroom Vercel + tunnels WordPress automatisés. Intégration Whop Checkout direct pour conversion maximale. Marque blanche complète.</p>
-        <div class="pillar-specs">
-          <div class="spec-line"><span class="spec-key">SEO TARGET</span><span class="spec-val purple" data-fr="Top 3 &lt;90j" data-en="Top 3 &lt;90d">Top 3 &lt;90j</span></div>
-          <div class="spec-line"><span class="spec-key">CHECKOUT</span><span class="spec-val purple">Whop Direct API</span></div>
-          <div class="spec-line"><span class="spec-key">SCALE</span><span class="spec-val purple" data-fr="120 Agences" data-en="120 Agencies">120 Agences</span></div>
-          <div class="spec-line"><span class="spec-key" data-fr="LIVRAISON" data-en="DELIVERY">LIVRAISON</span><span class="spec-val purple">&lt;24h Build</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONNEXION INVISIBLE -->
-<section id="connexion">
-  <div class="container">
-    <div class="section-tag" data-fr="03 — Automatisation" data-en="03 — Automation">03 — Automatisation</div>
-    <h2 class="section-title" data-fr="CONNEXION <span>INVISIBLE</span>" data-en="INVISIBLE <span>CONNECTION</span>">CONNEXION <span>INVISIBLE</span></h2>
-    <p class="section-desc" data-fr="Un écosystème entièrement synchronisé. Pixels, API et Webhooks orchestrent 120 agences sans intervention manuelle." data-en="A fully synchronized ecosystem. Pixels, APIs and Webhooks orchestrate 120 agencies without manual intervention.">Un écosystème entièrement synchronisé. Pixels, API et Webhooks orchestrent 120 agences sans intervention manuelle.</p>
-    <div class="connection-diagram reveal">
-      <div class="conn-node">
-        <span class="conn-node-icon">📊</span>
-        <div class="conn-node-label" data-fr="PIXELS META<br>& GOOGLE" data-en="META PIXELS<br>& GOOGLE">PIXELS META<br>&amp; GOOGLE</div>
-        <div class="conn-node-sub" data-fr="Audiences: Visit / Checkout / Video 75%" data-en="Audiences: Visit / Checkout / Video 75%">Audiences: Visit / Checkout / Video 75%</div>
-      </div>
-      <div class="conn-arrow">→</div>
-      <div class="conn-node">
-        <span class="conn-node-icon">⚡</span>
-        <div class="conn-node-label">ENGINE 12B<br>OIaaS™</div>
-        <div class="conn-node-sub" data-fr="Zapier + Webhooks<br>Orchestration centrale" data-en="Zapier + Webhooks<br>Central Orchestration">Zapier + Webhooks<br>Orchestration centrale</div>
-      </div>
-      <div class="conn-arrow">→</div>
-      <div class="conn-node">
-        <span class="conn-node-icon">🛒</span>
-        <div class="conn-node-label">WHOP API<br>CHECKOUT</div>
-        <div class="conn-node-sub" data-fr="Paniers abandonnés<br>B2B sync automatique" data-en="Abandoned carts<br>Automatic B2B sync">Paniers abandonnés<br>B2B sync automatique</div>
-      </div>
-    </div>
-    <div class="tech-tags reveal">
-      <span class="tech-tag">Meta CAPI</span>
-      <span class="tech-tag">Google Ads API</span>
-      <span class="tech-tag">Zapier Automations</span>
-      <span class="tech-tag pink">Whop Webhooks</span>
-      <span class="tech-tag pink">WordPress REST API</span>
-      <span class="tech-tag purple">Vercel Edge Functions</span>
-      <span class="tech-tag purple">DistroKid API</span>
-      <span class="tech-tag">ISRC Registry</span>
-      <span class="tech-tag">Hash ID Watermark</span>
-      <span class="tech-tag pink" data-fr="Retargeting J+3/7/21" data-en="Retargeting D+3/7/21">Retargeting J+3/7/21</span>
-    </div>
-    <div class="retarget-grid reveal">
-      <div class="retarget-cell">
-        <div class="retarget-label" data-fr="RECIBLAGE J+3" data-en="RETARGETING D+3">RECIBLAGE J+3</div>
-        <div style="font-size:.85rem;color:var(--cyan);" data-fr="Preuve sociale + témoignages" data-en="Social proof + testimonials">Preuve sociale + témoignages</div>
-      </div>
-      <div class="retarget-cell" style="border-left:1px solid var(--border);border-right:1px solid var(--border);">
-        <div class="retarget-label" data-fr="RECIBLAGE J+7" data-en="RETARGETING D+7">RECIBLAGE J+7</div>
-        <div style="font-size:.85rem;color:var(--pink);" data-fr="Offre limitée + urgence" data-en="Limited offer + urgency">Offre limitée + urgence</div>
-      </div>
-      <div class="retarget-cell">
-        <div class="retarget-label" data-fr="RECIBLAGE J+21" data-en="RETARGETING D+21">RECIBLAGE J+21</div>
-        <div style="font-size:.85rem;color:#a855f7;" data-fr="Accès VIP + upsell" data-en="VIP access + upsell">Accès VIP + upsell</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- IP SHIELD -->
-<section id="ip-shield">
-  <div class="container">
-    <div class="section-tag" data-fr="04 — Protection IP" data-en="04 — IP Protection">04 — Protection IP</div>
-    <h2 class="section-title" data-fr="IP <span>SHIELD</span><br>LICENCES DUALES" data-en="IP <span>SHIELD</span><br>DUAL LICENCES">IP <span>SHIELD</span><br>LICENCES DUALES</h2>
-    <p class="section-desc" data-fr="Système de licences blindé. Chaque fichier audio embarque un Hash ID et un watermark IA invisible pour traçabilité totale." data-en="Bulletproof licensing system. Each audio file carries an invisible Hash ID and AI watermark for total traceability.">Système de licences blindé. Chaque fichier audio embarque un Hash ID et un watermark IA invisible pour traçabilité totale.</p>
-    <table class="shield-table reveal">
-      <thead>
-        <tr>
-          <th class="th-type" data-fr="TYPE DE DROIT" data-en="RIGHT TYPE">TYPE DE DROIT</th>
-          <th class="th-white" data-fr="✅ WHITELIST — USAGE AUTORISÉ" data-en="✅ WHITELIST — PERMITTED USE">✅ WHITELIST — USAGE AUTORISÉ</th>
-          <th class="th-black" data-fr="🚫 BLACKLIST — INTERDIT" data-en="🚫 BLACKLIST — PROHIBITED">🚫 BLACKLIST — INTERDIT</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="tag-type" data-fr="COMMERCIAL" data-en="COMMERCIAL">COMMERCIAL</span></td>
-          <td><span class="check">✓</span><span data-fr="Pubs, funnels, reels, sites clients illimités" data-en="Ads, funnels, reels, unlimited client sites">Pubs, funnels, reels, sites clients illimités</span><br><span class="check">✓</span><span data-fr="Campagnes Meta, Google, TikTok Ads" data-en="Meta, Google, TikTok Ad Campaigns">Campagnes Meta, Google, TikTok Ads</span></td>
-          <td><span class="cross">✗</span><span data-fr="Revente des fichiers sources" data-en="Resale of source files">Revente des fichiers sources</span><br><span class="cross">✗</span><span data-fr="Distribution non autorisée sur DSP" data-en="Unauthorized distribution on DSP">Distribution non autorisée sur DSP</span></td>
-        </tr>
-        <tr>
-          <td><span class="tag-type" data-fr="MARQUE BLANCHE" data-en="WHITE LABEL">MARQUE BLANCHE</span></td>
-          <td><span class="check">✓</span><span data-fr="Intégration sous marque blanche agence" data-en="Agency white label integration">Intégration sous marque blanche agence</span><br><span class="check">✓</span><span data-fr="Habillage sonore client illimité" data-en="Unlimited client sonic branding">Habillage sonore client illimité</span></td>
-          <td><span class="cross">✗</span><span data-fr="Rebranding et revente concurrent" data-en="Competitive rebranding and resale">Rebranding et revente concurrent</span><br><span class="cross">✗</span><span data-fr="Attribution de paternité falsifiée" data-en="Falsified authorship attribution">Attribution de paternité falsifiée</span></td>
-        </tr>
-        <tr>
-          <td><span class="tag-type">WORDPRESS / WEB</span></td>
-          <td><span class="check">✓</span><span data-fr="Intégration Showroom Vercel + WP illimitée" data-en="Unlimited Vercel Showroom + WP integration">Intégration Showroom Vercel + WP illimitée</span><br><span class="check">✓</span><span data-fr="Tunnels Whop et checkout automatisé" data-en="Whop tunnels and automated checkout">Tunnels Whop et checkout automatisé</span></td>
-          <td><span class="cross">✗</span><span data-fr="Scraping ou extraction assets protégés" data-en="Scraping or extracting protected assets">Scraping ou extraction assets protégés</span><br><span class="cross">✗</span><span data-fr="Utilisation hors accord de licence signé" data-en="Use outside signed licence agreement">Utilisation hors accord de licence signé</span></td>
-        </tr>
-        <tr>
-          <td><span class="tag-type" data-fr="SANCTIONS" data-en="SANCTIONS">SANCTIONS</span></td>
-          <td><span class="check">✓</span><span data-fr="Support prioritaire 24h partenaires" data-en="Priority 24h partner support">Support prioritaire 24h partenaires</span><br><span class="check">✓</span><span data-fr="Mises à jour automatiques incluses" data-en="Automatic updates included">Mises à jour automatiques incluses</span></td>
-          <td><span class="cross">✗</span><span data-fr="DMCA automatique + 500$/fichier violé" data-en="Automatic DMCA + $500/violated file">DMCA automatique + 500$/fichier violé</span><br><span class="cross">✗</span><span data-fr="Résiliation immédiate accès plateforme" data-en="Immediate platform access termination">Résiliation immédiate accès plateforme</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="hash-banner reveal">
-      <span class="hash-icon">🔐</span>
-      <div class="hash-text">
-        <strong>Hash ID + Watermark IA Invisible :</strong> <span data-fr="Chaque fichier WAV exporté par le moteur 12B contient un identifiant cryptographique unique et un watermark stéganographique inaudible. Toute reproduction non autorisée est détectable instantanément, même après mixage et traitement." data-en="Every WAV file exported by the 12B engine contains a unique cryptographic identifier and inaudible steganographic watermark. Any unauthorized reproduction is instantly detectable, even after mixing and processing.">Chaque fichier WAV exporté par le moteur 12B contient un identifiant cryptographique unique et un watermark stéganographique inaudible. Toute reproduction non autorisée est détectable instantanément, même après mixage et traitement.</span>
-      </div>
-      <div class="hash-code">GGX-HASH-12B :: SHA-256</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PRICING ===== -->
-<section class="pricing-section" id="pricing">
-  <div class="container">
-    <div class="section-tag" data-fr="05 — Tarification" data-en="05 — Pricing">05 — Tarification</div>
-    <h2 class="section-title" data-fr="CHOISISSEZ VOTRE <span>NIVEAU</span><br>D'INFRASTRUCTURE" data-en="CHOOSE YOUR <span>INFRASTRUCTURE</span><br>LEVEL">CHOISISSEZ VOTRE <span>NIVEAU</span><br>D'INFRASTRUCTURE</h2>
-    <p class="section-desc" data-fr="4 niveaux d'accès. De l'audio IA standalone jusqu'à l'infrastructure enterprise complète avec audit stratégique inclus." data-en="4 access levels. From standalone AI audio to full enterprise infrastructure with strategic audit included.">4 niveaux d'accès. De l'audio IA standalone jusqu'à l'infrastructure enterprise complète avec audit stratégique inclus.</p>
-    <div class="pricing-grid reveal">
-
-      <!-- AUDIO $97 -->
-      <div class="price-card tier-audio">
-        <span class="price-badge" data-fr="NIVEAU 01" data-en="LEVEL 01">NIVEAU 01</span>
-        <div class="price-tier-name">AUDIO</div>
-        <div class="price-tagline" data-fr="Pack de démarrage. Audio IA multi-tracks en 24h." data-en="Starter pack. AI multi-track audio in 24h.">Pack de démarrage. Audio IA multi-tracks en 24h.</div>
-        <div class="price-amount">
-          <span class="dollar" style="color:var(--cyan)">$</span><span class="num">97</span>
-          <span class="period" data-fr="PAIEMENT UNIQUE" data-en="ONE-TIME PAYMENT">PAIEMENT UNIQUE</span>
-        </div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li data-fr="5 tracks WAV 24-bit stéréo" data-en="5 WAV 24-bit stereo tracks">5 tracks WAV 24-bit stéréo</li>
-          <li data-fr="Fichiers MIDI inclus" data-en="MIDI files included">Fichiers MIDI inclus</li>
-          <li data-fr="Livraison Build-on-Demand &lt;24h" data-en="Build-on-Demand delivery &lt;24h">Livraison Build-on-Demand &lt;24h</li>
-          <li data-fr="Licence commerciale standard" data-en="Standard commercial licence">Licence commerciale standard</li>
-          <li data-fr="Hash ID + watermark IA" data-en="Hash ID + AI watermark">Hash ID + watermark IA</li>
-          <li data-fr="Certification ISRC incluse" data-en="ISRC certification included">Certification ISRC incluse</li>
-        </ul>
-        <div class="roi-highlight" data-fr="ROI estimé : 3x en 30 jours" data-en="Estimated ROI: 3x in 30 days">ROI estimé : 3x en 30 jours</div>
-        <a href="https://whop.com/ggx-studios" target="_blank" class="price-cta" data-fr="⚡ Acheter AUDIO" data-en="⚡ Buy AUDIO">⚡ Acheter AUDIO</a>
-      </div>
-
-      <!-- AUDIO+ $297 -->
-      <div class="price-card tier-audioplus">
-        <span class="price-badge" data-fr="NIVEAU 02" data-en="LEVEL 02">NIVEAU 02</span>
-        <div class="price-tier-name">AUDIO+</div>
-        <div class="price-tagline" data-fr="Audio + clipping viral. Déploiement social complet." data-en="Audio + viral clipping. Full social deployment.">Audio + clipping viral. Déploiement social complet.</div>
-        <div class="price-amount">
-          <span class="dollar" style="color:var(--pink)">$</span><span class="num">297</span>
-          <span class="period" data-fr="PAIEMENT UNIQUE" data-en="ONE-TIME PAYMENT">PAIEMENT UNIQUE</span>
-        </div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li data-fr="Tout le pack AUDIO inclus" data-en="Full AUDIO pack included">Tout le pack AUDIO inclus</li>
-          <li data-fr="15 tracks WAV + MIDI premium" data-en="15 WAV + MIDI premium tracks">15 tracks WAV + MIDI premium</li>
-          <li data-fr="Pipeline clipping viral 9:16" data-en="9:16 viral clipping pipeline">Pipeline clipping viral 9:16</li>
-          <li data-fr="Optimisation TikTok / IG / YT / LI" data-en="TikTok / IG / YT / LI optimization">Optimisation TikTok / IG / YT / LI</li>
-          <li data-fr="Pixel retargeting J+3/J+7" data-en="Retargeting pixel D+3/D+7">Pixel retargeting J+3/J+7</li>
-          <li data-fr="Licence marque blanche partielle" data-en="Partial white label licence">Licence marque blanche partielle</li>
-          <li data-fr="Support prioritaire 48h" data-en="Priority 48h support">Support prioritaire 48h</li>
-        </ul>
-        <div class="roi-highlight" style="border-color:rgba(255,0,119,.3);color:var(--pink);" data-fr="ROI estimé : 8x en 30 jours" data-en="Estimated ROI: 8x in 30 days">ROI estimé : 8x en 30 jours</div>
-        <a href="https://whop.com/ggx-studios" target="_blank" class="price-cta" data-fr="⚡ Acheter AUDIO+" data-en="⚡ Buy AUDIO+">⚡ Acheter AUDIO+</a>
-      </div>
-
-      <!-- SYSTEM™ $997 -->
-      <div class="price-card tier-system featured">
-        <div class="popular-tag" data-fr="⭐ POPULAIRE" data-en="⭐ POPULAR">⭐ POPULAIRE</div>
-        <span class="price-badge" data-fr="NIVEAU 03" data-en="LEVEL 03">NIVEAU 03</span>
-        <div class="price-tier-name">SYSTEM™</div>
-        <div class="price-tagline" data-fr="Infrastructure complète. Automatisation totale pour agences." data-en="Full infrastructure. Total automation for agencies.">Infrastructure complète. Automatisation totale pour agences.</div>
-        <div class="price-amount">
-          <span class="dollar" style="color:#a855f7">$</span><span class="num">997</span>
-          <span class="period" data-fr="PAIEMENT UNIQUE" data-en="ONE-TIME PAYMENT">PAIEMENT UNIQUE</span>
-        </div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li data-fr="Tout AUDIO+ inclus" data-en="Full AUDIO+ included">Tout AUDIO+ inclus</li>
-          <li data-fr="Tracks illimitées — moteur 12B complet" data-en="Unlimited tracks — full 12B engine">Tracks illimitées — moteur 12B complet</li>
-          <li data-fr="Showroom Vercel + tunnels WordPress" data-en="Vercel Showroom + WordPress tunnels">Showroom Vercel + tunnels WordPress</li>
-          <li data-fr="Intégration Whop Checkout direct" data-en="Direct Whop Checkout integration">Intégration Whop Checkout direct</li>
-          <li data-fr="Marque blanche 100% complète" data-en="100% complete white label">Marque blanche 100% complète</li>
-          <li data-fr="Pixel J+3/J+7/J+21 complet" data-en="Full D+3/D+7/D+21 pixel">Pixel J+3/J+7/J+21 complet</li>
-          <li data-fr="SEO Vercel — Top 3 &lt;90 jours" data-en="Vercel SEO — Top 3 &lt;90 days">SEO Vercel — Top 3 &lt;90 jours</li>
-          <li data-fr="Support prioritaire 24h" data-en="Priority 24h support">Support prioritaire 24h</li>
-        </ul>
-        <div class="roi-highlight" style="border-color:rgba(168,85,247,.3);color:#a855f7;" data-fr="ROI estimé : 320% mensuel" data-en="Estimated ROI: 320% monthly">ROI estimé : 320% mensuel</div>
-        <a href="https://whop.com/ggx-studios" target="_blank" class="price-cta" data-fr="⚡ Déployer SYSTEM™" data-en="⚡ Deploy SYSTEM™">⚡ Déployer SYSTEM™</a>
-      </div>
-
-      <!-- ENTERPRISE $2,997/mo -->
-      <div class="price-card tier-enterprise">
-        <span class="price-badge" data-fr="NIVEAU 04" data-en="LEVEL 04">NIVEAU 04</span>
-        <div class="price-tier-name">ENTERPRISE</div>
-        <div class="price-tagline" data-fr="Partenariat stratégique. Audit + infrastructure dédiée." data-en="Strategic partnership. Audit + dedicated infrastructure.">Partenariat stratégique. Audit + infrastructure dédiée.</div>
-        <div class="price-amount">
-          <span class="dollar" style="color:#f59e0b">$</span><span class="num">2,997</span>
-          <span class="period" data-fr="/MOIS — RÉCURRENT" data-en="/MONTH — RECURRING">/MOIS — RÉCURRENT</span>
-        </div>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li data-fr="Tout SYSTEM™ inclus" data-en="Full SYSTEM™ included">Tout SYSTEM™ inclus</li>
-          <li data-fr="Audit stratégique mensuel 1:1" data-en="Monthly 1:1 strategic audit">Audit stratégique mensuel 1:1</li>
-          <li data-fr="Infrastructure cloud dédiée Québec" data-en="Dedicated Quebec cloud infrastructure">Infrastructure cloud dédiée Québec</li>
-          <li data-fr="Conformité Loi 25 garantie" data-en="Law 25 compliance guaranteed">Conformité Loi 25 garantie</li>
-          <li data-fr="Souveraineté des données 100%" data-en="100% data sovereignty">Souveraineté des données 100%</li>
-          <li data-fr="SLA 99.9% uptime garanti" data-en="SLA 99.9% uptime guaranteed">SLA 99.9% uptime garanti</li>
-          <li data-fr="Accès API illimité + webhooks custom" data-en="Unlimited API access + custom webhooks">Accès API illimité + webhooks custom</li>
-          <li data-fr="Account manager dédié" data-en="Dedicated account manager">Account manager dédié</li>
-          <li data-fr="Onboarding white-glove inclus" data-en="White-glove onboarding included">Onboarding white-glove inclus</li>
-        </ul>
-        <div class="roi-highlight" style="border-color:rgba(245,158,11,.3);color:#f59e0b;" data-fr="ROI estimé : 1:8 — ratio coûts/ventes" data-en="Estimated ROI: 1:8 — cost/sales ratio">ROI estimé : 1:8 — ratio coûts/ventes</div>
-        <button class="price-cta" onclick="openCalendly()" data-fr="📅 Réserver un Audit Stratégique" data-en="📅 Book a Strategic Audit">📅 Réserver un Audit Stratégique</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- DATA & ROI -->
-<section id="data">
-  <div class="container">
-    <div class="section-tag" data-fr="06 — Performance & ROI" data-en="06 — Performance & ROI">06 — Performance &amp; ROI</div>
-    <h2 class="section-title" data-fr="DATA <span>VÉRIFIÉE</span><br>& PROJECTIONS 2026" data-en="VERIFIED <span>DATA</span><br>& 2026 PROJECTIONS">DATA <span>VÉRIFIÉE</span><br>&amp; PROJECTIONS 2026</h2>
-    <p class="section-desc" data-fr="Métriques techniques et ROI validés sur le réseau de 120 agences partenaires actives." data-en="Technical metrics and ROI validated across the network of 120 active partner agencies.">Métriques techniques et ROI validés sur le réseau de 120 agences partenaires actives.</p>
-    <div class="roi-grid reveal">
-      <div class="roi-card">
-        <div class="roi-label" data-fr="Pipeline IA 12B" data-en="12B AI Pipeline">Pipeline IA 12B</div>
-        <div class="roi-value c">1:8</div>
-        <div class="roi-desc" data-fr="Ratio coûts vs ventes — rendement net par agence mensuel" data-en="Cost vs sales ratio — net monthly yield per agency">Ratio coûts vs ventes — rendement net par agence mensuel</div>
-      </div>
-      <div class="roi-card">
-        <div class="roi-label" data-fr="Drop Servicing Cycle" data-en="Drop Servicing Cycle">Drop Servicing Cycle</div>
-        <div class="roi-value p">320%</div>
-        <div class="roi-desc" data-fr="ROI mensuel moyen — écosystème Audio + Clipping + Tunnel" data-en="Average monthly ROI — Audio + Clipping + Tunnel ecosystem">ROI mensuel moyen — écosystème Audio + Clipping + Tunnel</div>
-      </div>
-      <div class="roi-card">
-        <div class="roi-label" data-fr="SEO Vercel" data-en="Vercel SEO">SEO Vercel</div>
-        <div class="roi-value w">Top 3</div>
-        <div class="roi-desc" data-fr="Positionnement Google en moins de 90 jours — 500+ leads/mois" data-en="Google ranking in under 90 days — 500+ leads/month">Positionnement Google en moins de 90 jours — 500+ leads/mois</div>
-      </div>
-      <div class="roi-card">
-        <div class="roi-label" data-fr="Pixels Retargeting B2B" data-en="B2B Retargeting Pixels">Pixels Retargeting B2B</div>
-        <div class="roi-value pu">5.2%</div>
-        <div class="roi-desc" data-fr="CTR moyen audiences B2B qualifiées Meta et Google" data-en="Average CTR on qualified B2B audiences Meta and Google">CTR moyen audiences B2B qualifiées Meta et Google</div>
-      </div>
-    </div>
-    <div class="data-bottom reveal">
-      <div>
-        <div class="section-tag" style="margin-bottom:16px;" data-fr="Tendances Marché 2026" data-en="Market Trends 2026">Tendances Marché 2026</div>
-        <div style="display:flex;flex-direction:column;gap:16px;">
-          <div class="trend-row">
-            <span style="font-size:.8rem;" data-fr="AI Marketing Automation WordPress" data-en="AI Marketing Automation WordPress">AI Marketing Automation WordPress</span>
-            <span style="font-family:'Orbitron',monospace;color:var(--cyan);font-weight:700;">+230% YOY</span>
-          </div>
-          <div class="trend-row">
-            <span style="font-size:.8rem;" data-fr="Sonic Branding IA Agency" data-en="AI Sonic Branding Agency">Sonic Branding IA Agency</span>
-            <span style="font-family:'Orbitron',monospace;color:var(--pink);font-weight:700;">+160%</span>
-          </div>
-          <div class="trend-row" style="border-bottom:none;padding-bottom:0">
-            <span style="font-size:.8rem;" data-fr="Output Infrastructure as a Service" data-en="Output Infrastructure as a Service">Output Infrastructure as a Service</span>
-            <span style="font-family:'Orbitron',monospace;color:#a855f7;font-weight:700;">+120% B2B</span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="section-tag" style="margin-bottom:16px;" data-fr="Capacité Système" data-en="System Capacity">Capacité Système</div>
-        <div style="display:flex;flex-direction:column;gap:14px;">
-          <div class="cap-bar-wrap">
-            <div class="cap-bar-labels">
-              <span style="font-size:.72rem;color:var(--dim);" data-fr="Agences Actives" data-en="Active Agencies">Agences Actives</span>
-              <span style="font-size:.72rem;color:var(--cyan);">120/120</span>
-            </div>
-            <div class="cap-bar-bg"><div class="cap-bar-fill" style="height:100%;width:100%;background:var(--cyan);box-shadow:0 0 8px var(--cyan)"></div></div>
-          </div>
-          <div class="cap-bar-wrap">
-            <div class="cap-bar-labels">
-              <span style="font-size:.72rem;color:var(--dim);" data-fr="Utilisation Pipeline 12B" data-en="12B Pipeline Usage">Utilisation Pipeline 12B</span>
-              <span style="font-size:.72rem;color:var(--pink);">87%</span>
-            </div>
-            <div class="cap-bar-bg"><div class="cap-bar-fill" style="height:100%;width:87%;background:var(--pink);box-shadow:0 0 8px var(--pink)"></div></div>
-          </div>
-          <div class="cap-bar-wrap">
-            <div class="cap-bar-labels">
-              <span style="font-size:.72rem;color:var(--dim);" data-fr="Uptime Infrastructure" data-en="Infrastructure Uptime">Uptime Infrastructure</span>
-              <span style="font-size:.72rem;color:#a855f7;">99.9%</span>
-            </div>
-            <div class="cap-bar-bg"><div class="cap-bar-fill" style="height:100%;width:99.9%;background:#a855f7;box-shadow:0 0 8px #a855f7"></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="cta-section" id="checkout">
-  <div class="container">
-    <div class="section-tag" style="justify-content:center;" data-fr="07 — Accès" data-en="07 — Access">07 — Accès</div>
-    <h2 class="cta-title" data-fr="REJOINDRE L'<span>OUTPUT</span><br>SYSTEM™" data-en="JOIN THE <span>OUTPUT</span><br>SYSTEM™">REJOINDRE L'<span>OUTPUT</span><br>SYSTEM™</h2>
-    <p class="cta-sub" data-fr="Capacité limitée à 120 agences — Time-to-delivery &lt;24h — Marque blanche complète" data-en="Limited capacity to 120 agencies — Time-to-delivery &lt;24h — Full white label">Capacité limitée à 120 agences — Time-to-delivery &lt;24h — Marque blanche complète</p>
-    <div class="cta-buttons">
-      <a href="https://whop.com/ggx-studios" target="_blank" class="btn-primary" data-fr="⚡ Acheter Output System™" data-en="⚡ Buy Output System™">⚡ Acheter Output System™</a>
-      <a href="#pricing" class="btn-secondary" data-fr="Voir les Tarifs →" data-en="View Pricing →">Voir les Tarifs →</a>
-      <a href="https://distrokid.com/hyperfollow/ggxstudios/epic-stadium-shred-hard-rock-backing-track-in-e-minor-130-bpm--ggx-studios" target="_blank" class="btn-ghost">HyperFollow Gateway</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div>
-        <div class="footer-brand">GGX STUDIOS INC.</div>
-        <div class="footer-expertise" data-fr="Expertise à Québec | Infrastructure Cloud à Montréal" data-en="Expertise in Québec | Cloud Infrastructure in Montréal">Expertise à Québec | Infrastructure Cloud à Montréal</div>
-        <div class="footer-copy">© 2026 GGX Services Inc. — Québec, Canada</div>
-        <div class="footer-sovereignty">
-          <strong data-fr="🍁 Hébergement 100% Québec" data-en="🍁 100% Quebec Hosting">🍁 Hébergement 100% Québec</strong>
-          <span data-fr="Conformité Loi 25 & Souveraineté des données garantie. Vos données ne quittent jamais le territoire québécois. Infrastructure certifiée et auditée annuellement." data-en="Law 25 compliance & data sovereignty guaranteed. Your data never leaves Quebec territory. Annually certified and audited infrastructure.">Conformité Loi 25 &amp; Souveraineté des données garantie. Vos données ne quittent jamais le territoire québécois. Infrastructure certifiée et auditée annuellement.</span>
-        </div>
-      </div>
-      <div class="footer-badges">
-        <span class="footer-badge">ISRC Certified</span>
-        <span class="footer-badge">IA 12B Engine</span>
-        <span class="footer-badge">OIaaS™</span>
-        <span class="footer-badge">SHA-256 Hash ID</span>
-        <span class="footer-badge" style="border-color:rgba(0,255,224,.2);color:var(--cyan);" data-fr="Loi 25 Conforme" data-en="Law 25 Compliant">Loi 25 Conforme</span>
-        <span class="footer-badge" style="border-color:rgba(0,255,224,.2);color:var(--cyan);" data-fr="Données Québec" data-en="Quebec Data">Données Québec</span>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- CTA FLOAT -->
-<a href="https://whop.com/ggx-studios" target="_blank" class="cta-float" title="Checkout Whop Direct">
-  <span class="cta-float-label" data-fr="CHECKOUT WHOP" data-en="CHECKOUT WHOP">CHECKOUT WHOP</span>
-  <div class="cta-float-inner">⚡</div>
-</a>
-
-<!-- CALENDLY MODAL -->
-<div class="modal-overlay" id="calendlyModal" onclick="closeCalendlyOutside(event)">
-  <div class="modal-box">
-    <div class="modal-header">
-      <div>
-        <div style="font-size:.6rem;letter-spacing:4px;color:#f59e0b;text-transform:uppercase;margin-bottom:8px;" data-fr="ENTERPRISE — NIVEAU 04" data-en="ENTERPRISE — LEVEL 04">ENTERPRISE — NIVEAU 04</div>
-        <div class="modal-title" data-fr="📅 Réserver votre <span>Audit Stratégique</span>" data-en="📅 Book your <span>Strategic Audit</span>">📅 Réserver votre <span>Audit Stratégique</span></div>
-      </div>
-      <button class="modal-close" onclick="closeCalendly()">✕</button>
-    </div>
-    <div class="modal-body">
-      <p class="modal-sub" data-fr="Session 1:1 de 60 minutes avec notre architecte infrastructure. Nous analysons votre écosystème actuel et vous proposons un plan de déploiement <strong>OIaaS™ Enterprise</strong> sur-mesure." data-en="60-minute 1:1 session with our infrastructure architect. We analyze your current ecosystem and propose a tailored <strong>OIaaS™ Enterprise</strong> deployment plan.">Session 1:1 de 60 minutes avec notre architecte infrastructure. Nous analysons votre écosystème actuel et vous proposons un plan de déploiement <strong>OIaaS™ Enterprise</strong> sur-mesure.</p>
-      <div class="calendly-placeholder">
-        <!-- 
-          INTÉGRATION CALENDLY :
-          Remplacez ce bloc par le widget officiel Calendly :
-          <div class="calendly-inline-widget" data-url="https://calendly.com/VOTRE-LIEN/audit-strategique" style="min-width:320px;height:630px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        -->
-        <p data-fr="🗓️ CALENDLY — LIEN À CONFIGURER" data-en="🗓️ CALENDLY — LINK TO CONFIGURE">🗓️ CALENDLY — LIEN À CONFIGURER</p>
-        <small data-fr="Remplacez ce placeholder par votre widget Calendly embed dans le code source." data-en="Replace this placeholder with your Calendly embed widget in the source code.">Remplacez ce placeholder par votre widget Calendly embed dans le code source.</small>
-        <br><br>
-        <a href="https://calendly.com" target="_blank" class="btn-primary" style="margin:0 auto;display:inline-flex;" data-fr="Ouvrir Calendly →" data-en="Open Calendly →">Ouvrir Calendly →</a>
-      </div>
-      <div class="modal-benefits">
-        <div class="modal-benefit">
-          <strong data-fr="AUDIT INFRA" data-en="INFRA AUDIT">AUDIT INFRA</strong>
-          <span data-fr="Analyse complète de votre stack actuel et recommandations IA 12B." data-en="Full analysis of your current stack and 12B AI recommendations.">Analyse complète de votre stack actuel et recommandations IA 12B.</span>
-        </div>
-        <div class="modal-benefit">
-          <strong data-fr="ROADMAP 90J" data-en="90D ROADMAP">ROADMAP 90J</strong>
-          <span data-fr="Plan de déploiement détaillé avec KPIs et milestones mesurables." data-en="Detailed deployment plan with measurable KPIs and milestones.">Plan de déploiement détaillé avec KPIs et milestones mesurables.</span>
-        </div>
-        <div class="modal-benefit">
-          <strong data-fr="LOI 25 REVIEW" data-en="LAW 25 REVIEW">LOI 25 REVIEW</strong>
-          <span data-fr="Évaluation de conformité et souveraineté des données pour votre agence." data-en="Compliance and data sovereignty assessment for your agency.">Évaluation de conformité et souveraineté des données pour votre agence.</span>
-        </div>
-        <div class="modal-benefit">
-          <strong data-fr="ROI PROJECTION" data-en="ROI PROJECTION">ROI PROJECTION</strong>
-          <span data-fr="Calcul du ROI personnalisé basé sur votre volume et vos objectifs." data-en="Personalized ROI calculation based on your volume and goals.">Calcul du ROI personnalisé basé sur votre volume et vos objectifs.</span>
-        </div>
-      </div>
+</div>
+<div class="smbg" id="smbg">
+  <div class="smbox">
+    <h3>Ajouter une image</h3>
+    <input class="smin" id="urlin" type="text" placeholder="https://exemple.com/image.jpg" spellcheck="false"/>
+    <div class="smhint">URL directe vers une image ou glisser-deposer sur la case</div>
+    <div class="smacts">
+      <button class="smok" onclick="confirmUrl()">Confirmer URL</button>
+      <button class="smsec" id="filebtn">Fichier local</button>
+      <button class="smsec" onclick="closeSM()">X</button>
     </div>
   </div>
 </div>
-
+<div class="mmbg" id="mmbg">
+  <div class="mmbox">
+    <h3>Medias YouTube et Audio</h3>
+    <div class="mrow"><label>Lien YouTube</label><input class="smin" id="ytin" type="text" placeholder="https://youtube.com/watch?v=..."/></div>
+    <div class="mrow"><label>Lien audio MP3</label><input class="smin" id="auin" type="text" placeholder="https://exemple.com/track.mp3"/></div>
+    <div class="mrow"><label>Titre du morceau</label><input class="smin" id="autitle" type="text" placeholder="Nom du track..."/></div>
+    <button class="msave" onclick="saveMedia()">Enregistrer</button>
+    <button class="mclear" onclick="clearMedia()">Supprimer les medias</button>
+    <button class="mcancel" onclick="closeMM()">Annuler</button>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
 <script>
-// ===== SMOOTH SCROLL =====
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const t=document.querySelector(a.getAttribute('href'));
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
-  });
-});
-
-// ===== REVEAL =====
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach((entry,i)=>{
-    if(entry.isIntersecting)setTimeout(()=>entry.target.classList.add('in'),i*80);
-  });
-},{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// ===== BILINGUALISM =====
-let currentLang = 'fr';
-function toggleLang(){
-  currentLang = currentLang === 'fr' ? 'en' : 'fr';
-  document.getElementById('langLabel').textContent = currentLang === 'fr' ? 'EN' : 'FR';
-  document.getElementById('html-root').lang = currentLang;
-  applyLang(currentLang);
+var SHOP="https://whop.com/ai-ggx";
+var PW="ggx2025";
+var TOTAL=80,PERP=10,NP=8;
+var imgs=new Array(TOTAL).fill(null);
+var edit=false,unlocked=false,pslot=null,curpg=0,aEl=null;
+function lload(){try{var d=JSON.parse(localStorage.getItem('ggxv3')||'{}');if(Array.isArray(d.i)&&d.i.length===TOTAL)imgs=d.i;}catch(e){}}
+function lsave(){try{localStorage.setItem('ggxv3',JSON.stringify({i:imgs}));}catch(e){}}
+function mload(){try{return JSON.parse(localStorage.getItem('ggxv3m')||'{}');}catch(e){return {};}}
+function msave2(d){try{localStorage.setItem('ggxv3m',JSON.stringify(d));}catch(e){}}
+lload();
+var fi=document.createElement('input');fi.type='file';fi.accept='image/*';fi.style.display='none';
+document.body.appendChild(fi);
+document.getElementById('filebtn').onclick=function(){closeSM();fi.click();};
+fi.onchange=function(){if(!fi.files[0]||pslot===null)return;var r=new FileReader();r.onload=function(e){setImg(pslot,e.target.result);};r.readAsDataURL(fi.files[0]);fi.value='';};
+var navEl=document.getElementById('nav'),dotsEl=document.getElementById('dots'),pagesEl=document.getElementById('pages');
+for(var p=0;p<NP;p++){(function(idx){
+  var b=document.createElement('button');b.className='pg-btn'+(idx===0?' on':'');b.textContent='0'+(idx+1);b.onclick=function(){goPage(idx);};navEl.appendChild(b);
+  var d=document.createElement('button');d.className='dot'+(idx===0?' on':'');d.onclick=function(){goPage(idx);};dotsEl.appendChild(d);
+  var s=document.createElement('div');s.className='pg'+(idx===0?' on':'');s.id='pg'+idx;
+  var g=document.createElement('div');g.className='grid';g.id='gr'+idx;s.appendChild(g);pagesEl.appendChild(s);
+})(p);}
+function render(){for(var p=0;p<NP;p++){var g=document.getElementById('gr'+p);g.innerHTML='';var s=p*PERP,e=Math.min(s+PERP,TOTAL);for(var i=s;i<e;i++)g.appendChild(makeSlot(i));}}
+function makeSlot(i){
+  var w=document.createElement('div');w.className='card';
+  if(imgs[i]){
+    w.innerHTML='<div class="cimgw"><img class="cimg" src="'+imgs[i]+'" alt="" loading="lazy"/><div class="cov"></div><button class="rm" onclick="delImg('+i+',event)"><svg viewBox="0 0 10 10"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button></div><a class="shopbtn" href="'+SHOP+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">SHOP</a>';
+    w.addEventListener('click',function(){window.open(SHOP,'_blank');});
+  } else {
+    var em=document.createElement('div');em.className='eslot';
+    em.innerHTML='<svg class="ei" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width=".9"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span class="el">Ajouter</span>';
+    (function(idx){
+      em.addEventListener('click',function(){if(edit)openSM(idx);});
+      em.addEventListener('dragover',function(e){e.preventDefault();em.classList.add('dov');});
+      em.addEventListener('dragleave',function(){em.classList.remove('dov');});
+      em.addEventListener('drop',function(e){e.preventDefault();em.classList.remove('dov');var f=e.dataTransfer.files[0];if(f&&f.type.startsWith('image/')){var r=new FileReader();r.onload=function(ev){setImg(idx,ev.target.result);};r.readAsDataURL(f);}else{var u=e.dataTransfer.getData('text/plain')||e.dataTransfer.getData('text/uri-list');if(u)setImg(idx,u.trim());}});
+    })(i);
+    w.appendChild(em);
+  }
+  return w;
 }
-function applyLang(lang){
-  document.querySelectorAll('[data-fr]').forEach(el=>{
-    const val = el.getAttribute('data-'+lang);
-    if(val !== null){
-      if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val;}
-      else{el.innerHTML=val;}
-    }
-  });
-}
-
-// ===== CALENDLY MODAL =====
-function openCalendly(){
-  document.getElementById('calendlyModal').classList.add('active');
-  document.body.style.overflow='hidden';
-}
-function closeCalendly(){
-  document.getElementById('calendlyModal').classList.remove('active');
-  document.body.style.overflow='';
-}
-function closeCalendlyOutside(e){
-  if(e.target===document.getElementById('calendlyModal'))closeCalendly();
-}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCalendly();});
-
-// GA4
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-XXXXXXXXXX');
+function setImg(i,src){imgs[i]=src;lsave();render();revealPg(curpg);tip('Image ajoutee');}
+function delImg(i,e){e.stopPropagation();imgs[i]=null;lsave();render();revealPg(curpg);}
+function clickLock(){if(unlocked){lockDown();}else{document.getElementById('pwbg').classList.add('open');setTimeout(function(){document.getElementById('pwin').focus();},80);}}
+function checkPw(){if(document.getElementById('pwin').value===PW){unlocked=true;closePw();document.getElementById('lockbtn').classList.add('on');document.getElementById('ownerbar').classList.add('open');tip('Mode proprietaire');}else{document.getElementById('pwerr').textContent='Mot de passe incorrect';document.getElementById('pwin').value='';}}
+function closePw(){document.getElementById('pwbg').classList.remove('open');document.getElementById('pwin').value='';document.getElementById('pwerr').textContent='';}
+function lockDown(){unlocked=false;edit=false;document.getElementById('lockbtn').classList.remove('on');document.getElementById('ownerbar').classList.remove('open');document.getElementById('editbtn').classList.remove('on');document.getElementById('editbtn').textContent='+ Ajouter';pagesEl.classList.remove('edit-mode');}
+document.getElementById('pwin').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();if(e.key==='Escape')closePw();});
+function toggleEdit(){if(!unlocked)return;edit=!edit;var b=document.getElementById('editbtn');b.classList.toggle('on',edit);b.textContent=edit?'Termine':'+ Ajouter';pagesEl.classList.toggle('edit-mode',edit);if(edit)tip('Cliquez sur une case pour ajouter');}
+function goPage(idx){curpg=idx;document.querySelectorAll('.pg').forEach(function(s,i){s.classList.toggle('on',i===idx);});document.querySelectorAll('.pg-btn').forEach(function(b,i){b.classList.toggle('on',i===idx);});document.querySelectorAll('.dot').forEach(function(d,i){d.classList.toggle('on',i===idx);});window.scrollTo({top:0,behavior:'smooth'});revealPg(idx);}
+function revealPg(idx){document.querySelectorAll('#gr'+idx+' .card').forEach(function(c,i){c.classList.remove('show');setTimeout(function(){c.classList.add('show');},i*28);});}
+function openSM(i){pslot=i;document.getElementById('urlin').value='';document.getElementById('smbg').classList.add('open');setTimeout(function(){document.getElementById('urlin').focus();},80);}
+function closeSM(){document.getElementById('smbg').classList.remove('open');}
+function confirmUrl(){var v=document.getElementById('urlin').value.trim();if(v&&pslot!==null)setImg(pslot,v);closeSM();}
+document.getElementById('urlin').addEventListener('keydown',function(e){if(e.key==='Enter')confirmUrl();if(e.key==='Escape')closeSM();});
+function ytid(u){var m=u.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);return m?m[1]:null;}
+function fmtt(s){var m=Math.floor(s/60),sc=Math.floor(s%60);return m+':'+(sc<10?'0':'')+sc;}
+function buildAudio(url,title){var c=document.getElementById('auC');c.innerHTML='';if(!url)return;aEl=new Audio(url);aEl.preload='metadata';c.innerHTML='<div class="aplayer"><button class="apbtn" id="apbtn" onclick="toggleA()"><svg class="ipl" viewBox="0 0 12 14"><path d="M1 1l10 6L1 13V1z"/></svg><svg class="ipa" viewBox="0 0 11 13"><rect x="0" y="0" width="3.5" height="13"/><rect x="7" y="0" width="3.5" height="13"/></svg></button><div class="ainfo"><div class="atrack">'+(title||url.split('/').pop())+'</div><div class="aprog" id="aprog"><div class="apfill" id="apfill"></div></div><div class="atime" id="atime">0:00 / 0:00</div></div><div class="avol"><svg viewBox="0 0 20 16"><path d="M1 5h4l5-4v14l-5-4H1V5z"/><path d="M13 5.5a5 5 0 010 5"/></svg><input type="range" class="avolin" id="avolin" min="0" max="1" step=".01" value="1" oninput="setAV(this.value)"/></div></div>';aEl.addEventListener('timeupdate',function(){var p=aEl.duration?aEl.currentTime/aEl.duration*100:0;var f=document.getElementById('apfill');if(f)f.style.width=p+'%';var t=document.getElementById('atime');if(t)t.textContent=fmtt(aEl.currentTime)+' / '+fmtt(aEl.duration||0);});aEl.addEventListener('ended',function(){var b=document.getElementById('apbtn');if(b)b.classList.remove('pl');});document.getElementById('aprog').addEventListener('click',function(e){if(!aEl.duration)return;var r=this.getBoundingClientRect();aEl.currentTime=(e.clientX-r.left)/r.width*aEl.duration;});}
+function toggleA(){if(!aEl)return;var b=document.getElementById('apbtn');if(aEl.paused){aEl.play();b.classList.add('pl');}else{aEl.pause();b.classList.remove('pl');}}
+function setAV(v){if(aEl)aEl.volume=parseFloat(v);}
+function renderMedia(d){var mw=document.getElementById('mwrap'),yc=document.getElementById('ytC'),ac=document.getElementById('auC');yc.innerHTML='';ac.innerHTML='';var has=false;if(d.yt){var id=ytid(d.yt);if(id){yc.innerHTML='<div class="yt-frame"><iframe src="https://www.youtube.com/embed/'+id+'?rel=0&modestbranding=1" allowfullscreen allow="autoplay;picture-in-picture"></iframe></div>';has=true;}}if(d.au){buildAudio(d.au,d.auTitle);has=true;}mw.classList.toggle('active',has);}
+function openMM(){if(!unlocked)return;var d=mload();document.getElementById('ytin').value=d.yt||'';document.getElementById('auin').value=d.au||'';document.getElementById('autitle').value=d.auTitle||'';document.getElementById('mmbg').classList.add('open');}
+function closeMM(){document.getElementById('mmbg').classList.remove('open');}
+function saveMedia(){var d={yt:document.getElementById('ytin').value.trim(),au:document.getElementById('auin').value.trim(),auTitle:document.getElementById('autitle').value.trim()};msave2(d);renderMedia(d);closeMM();tip('Medias enregistres');}
+function clearMedia(){msave2({});renderMedia({});closeMM();tip('Medias supprimes');}
+var tipt;
+function tip(m){var el=document.getElementById('tip');el.textContent=m;el.classList.add('show');clearTimeout(tipt);tipt=setTimeout(function(){el.classList.remove('show');},2000);}
+render();revealPg(0);renderMedia(mload());
 </script>
 </body>
 </html>
